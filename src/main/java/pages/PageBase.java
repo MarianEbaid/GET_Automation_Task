@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -54,8 +56,8 @@ public class PageBase {
 	
 	public void waitDriver(WebDriver driver)
 	{
-	//	 
-	    
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(350));
+		
 	}
 	
 
