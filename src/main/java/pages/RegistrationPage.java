@@ -37,61 +37,36 @@ public class RegistrationPage extends PageBase
 	@FindBy(id = "nf-field-24")
 	WebElement monthMenu ;
 	
-	@FindBy(id = "nf-label-class-field-23-1")
+	@FindBy(id = "input#nf-field-23-1.ninja-forms-field.nf-element")
 	WebElement referralRdoBtn ; 
-	
-	
-	//@FindBy(className="recaptcha-checkbox-checkmark")
-	//WebElement recaptchaChkBox ; 
-	
+
 	
 	@FindBy(id = "nf-field-15")
 	WebElement registerBtn ; 
 	
-	@FindBy(css="div.nf-response-msg")
+	@FindBy(id ="nf-form-3-cont")
 	public WebElement successMessage ; 
 	
-	//@FindBy(className="nf-error-msg nf-error-required-error")
-	//public WebElement requiredMessage ; 
-	
-	//@FindBy(css ="button.btn.btn-default.btn-lg.btn-block.effect.ladda-button.waves-effect")
-	//public WebElement loginBtn; 
-	
-	//@FindBy(className="author__meta")
-	//public WebElement WelcomeMessage; 
 	
 	
-	
-	public void userRegistration(String firstName, String lastName, String phone, String email, String course, String month)
+	public void userRegistration(String firstName, String lastName, String email, String phone, String course, String month)
 	//, String accountType) 
 	{
 		setTextElementText(fnTxtBox, firstName);
 		setTextElementText(lnTxtBox, lastName);
-		setTextElementText(phoneTxtBox, phone);
 		setTextElementText(emailTxtBox, email);
-		//setTextElementText(passwordTxtBox, password);
+		setTextElementText(phoneTxtBox, phone);
 		
+
 		Select courseName = new Select(courseMenu);
 		courseName.selectByValue(course);
 		
 		Select monthName = new Select(monthMenu);
 		monthName.selectByValue(month);
 		
-		//scrollIntoElement(referralRdBtn);
-		clickButton(referralRdoBtn);
 		
-		/*
-		//scrollIntoElement(accountTypeMenu);		
-		//action.moveToElement(accountTypeMenu).click().build().perform();
-		
-		scrollIntoElement(customerType);
-		action.moveToElement(customerType).click().build().perform();
-		
-		scrollIntoElement(recaptchaChkBox);
-		recaptchaChkBox.click();
-		*/
-		//scrollIntoElement(registerBtn);
-		//scrollToBottom() ;
+		referralRdoBtn.click();
+
 		clickButton(registerBtn);
 		System.out.println(successMessage.getText());
 	}
