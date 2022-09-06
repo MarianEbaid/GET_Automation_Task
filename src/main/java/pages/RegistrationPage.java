@@ -7,12 +7,15 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+
 public class RegistrationPage extends PageBase 
 {
 	public RegistrationPage(WebDriver driver) {
 		super(driver);
 		jse = (JavascriptExecutor) driver; 
 		action = new Actions(driver); 
+		wait = new WebDriverWait(driver);
+			
 	}
 	
 	
@@ -26,10 +29,7 @@ public class RegistrationPage extends PageBase
 	WebElement phoneTxtBox ; 
 	
 	@FindBy(id = "nf-field-19")
-	WebElement emailTxtBox ; 
-	
-	//@FindBy(name="password")
-	//WebElement passwordTxtBox ; 
+	WebElement emailTxtBox ; 	
 	
 	@FindBy(id = "nf-field-22")
 	WebElement courseMenu ; 
@@ -37,16 +37,17 @@ public class RegistrationPage extends PageBase
 	@FindBy(id = "nf-field-24")
 	WebElement monthMenu ;
 	
-	@FindBy(id = "input#nf-field-23-1.ninja-forms-field.nf-element")
+	@FindBy(id = "nf-field-23-1")
 	WebElement referralRdoBtn ; 
-
 	
 	@FindBy(id = "nf-field-15")
 	WebElement registerBtn ; 
 	
-	@FindBy(id ="nf-form-3-cont")
+	@FindBy(id  = "nf-form-title-3")
 	public WebElement successMessage ; 
 	
+	
+//ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
 	
 	
 	public void userRegistration(String firstName, String lastName, String email, String phone, String course, String month)
@@ -64,10 +65,14 @@ public class RegistrationPage extends PageBase
 		Select monthName = new Select(monthMenu);
 		monthName.selectByValue(month);
 		
-		
-		referralRdoBtn.click();
+		jse.executeScript("arguments[0].click();", referralRdoBtn);
+		//clickButton(referralRdoBtn);
 
 		clickButton(registerBtn);
+		
+		//action.pause(Duration.ofSeconds(3500));	
+		
+		
 		System.out.println(successMessage.getText());
 	}
 	/*

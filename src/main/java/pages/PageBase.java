@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageBase {
 
@@ -13,6 +14,8 @@ public class PageBase {
 	public JavascriptExecutor jse ; 
 	public Select select ; 
 	public Actions action ; 
+	public WebDriverWait wait;
+
 
 	// create constructor 
 	public PageBase(WebDriver driver) 
@@ -46,6 +49,11 @@ public class PageBase {
 	public void clearText(WebElement element) 
 	{
 		element.clear();
+	}
+	
+	public void waitDriver(WebDriver driver)
+	{
+		wait.WebDriverWait (driver,50);
 	}
 	
 

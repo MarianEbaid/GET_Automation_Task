@@ -1,8 +1,7 @@
 package tests;
 
+import java.time.Duration;
 import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -23,6 +23,7 @@ import utilities.Helper;
 public class TestBase 
 {
 	public static WebDriver driver ; 
+	public static WebDriverWait driverWait ;
 	
 	public static String downloadPath = System.getProperty("user.dir") + "\\Downloads";
 
@@ -36,18 +37,18 @@ public class TestBase
 		return option;
 	}
 
-	@SuppressWarnings("deprecation")
+	
 	public static ChromeOptions chromeOption() {
 		ChromeOptions options = new ChromeOptions();
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 		chromePrefs.put("profile.default.content_settings.popups", 0);
 		chromePrefs.put("download.default_directory", downloadPath);
 		options.setExperimentalOption("prefs", chromePrefs);
-		options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		//options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		return options;
 	}
 
-	@SuppressWarnings("deprecation")
+	
 	@BeforeSuite
 	@Parameters({"browser"})
 	public void startDriver(@Optional("chrome") String browserName) 
@@ -72,7 +73,7 @@ public class TestBase
 			driver = new SafariDriver(); 
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(350));
 		driver.navigate().to("https://codenboxautomationlab.com/registration-form/");
 	} 
 

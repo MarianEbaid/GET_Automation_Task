@@ -3,8 +3,6 @@ package tests;
 
 
 import org.testng.annotations.Test;
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 
@@ -26,11 +24,6 @@ public class TestRegistration extends TestBase
 		//homeObject.openRegistrationPage();
 		registerObject = new RegistrationPage(driver); 
 		registerObject.userRegistration("Marian", "Sultan","test@hotmail.com", "01225369841", "selenium-automation","april");
-		//, "customers");
-		
-		//String expectedURL = "https://phptravels.net/login/signup";
-		//String actualURL = driver.getCurrentUrl();
-		//Assert.assertEquals(actualURL, expectedURL);	
 	
 		System.out.println(registerObject.successMessage.getText());		
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Thank you for registering for our event."));
