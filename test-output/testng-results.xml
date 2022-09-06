@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-06T15:22:38 EET" name="Default suite" finished-at="2022-09-06T15:22:40 EET" duration-ms="1528">
+  <suite started-at="2022-09-06T16:48:42 EET" name="Default suite" finished-at="2022-09-06T16:48:44 EET" duration-ms="1788">
     <groups>
     </groups>
-    <test started-at="2022-09-06T15:22:38 EET" name="Default test" finished-at="2022-09-06T15:22:40 EET" duration-ms="1528">
+    <test started-at="2022-09-06T16:48:42 EET" name="Default test" finished-at="2022-09-06T16:48:44 EET" duration-ms="1788">
       <class name="tests.TestRegistration">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T15:22:30 EET" name="startDriver" finished-at="2022-09-06T15:22:38 EET" duration-ms="8000" status="PASS">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T16:48:33 EET" name="startDriver" finished-at="2022-09-06T16:48:42 EET" duration-ms="9091" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="ValidRegistrationTest()[pri:1, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T15:22:38 EET" name="ValidRegistrationTest" finished-at="2022-09-06T15:22:39 EET" duration-ms="1229" status="FAIL">
+        <test-method signature="ValidRegistrationTest()[pri:1, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T16:48:42 EET" name="ValidRegistrationTest" finished-at="2022-09-06T16:48:44 EET" duration-ms="1400" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -64,7 +64,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T15:22:39 EET" name="screenshotOnFailure" finished-at="2022-09-06T15:22:40 EET" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T16:48:44 EET" name="screenshotOnFailure" finished-at="2022-09-06T16:48:44 EET" duration-ms="332" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T15:22:40 EET" name="stopDriver" finished-at="2022-09-06T15:22:40 EET" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.TestRegistration@1530c739]" started-at="2022-09-06T16:48:44 EET" name="stopDriver" finished-at="2022-09-06T16:48:45 EET" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->

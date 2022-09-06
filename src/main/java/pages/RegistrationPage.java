@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class RegistrationPage extends PageBase 
@@ -14,7 +15,7 @@ public class RegistrationPage extends PageBase
 		super(driver);
 		jse = (JavascriptExecutor) driver; 
 		action = new Actions(driver); 
-		wait = new WebDriverWait(driver);
+		//wait = new WebDriverWait(driver);
 			
 	}
 	
@@ -43,11 +44,11 @@ public class RegistrationPage extends PageBase
 	@FindBy(id = "nf-field-15")
 	WebElement registerBtn ; 
 	
-	@FindBy(id  = "nf-form-title-3")
+	@FindBy(className  = "nf-response-msg")
 	public WebElement successMessage ; 
 	
 	
-//ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
+
 	
 	
 	public void userRegistration(String firstName, String lastName, String email, String phone, String course, String month)
@@ -71,6 +72,8 @@ public class RegistrationPage extends PageBase
 		clickButton(registerBtn);
 		
 		//action.pause(Duration.ofSeconds(3500));	
+		
+		//ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
 		
 		
 		System.out.println(successMessage.getText());

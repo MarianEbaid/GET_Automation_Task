@@ -26,6 +26,7 @@ public class PageBase {
 	protected static void clickButton(WebElement button) 
 	{
 		button.click();
+		
 	}
 	
 	protected static void setTextElementText(WebElement textElement , String value) 
@@ -53,7 +54,8 @@ public class PageBase {
 	
 	public void waitDriver(WebDriver driver)
 	{
-		wait.WebDriverWait (driver,50);
+	//	 
+	    
 	}
 	
 
