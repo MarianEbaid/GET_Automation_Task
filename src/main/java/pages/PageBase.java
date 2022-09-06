@@ -22,6 +22,7 @@ public class PageBase {
 	{
 		PageFactory.initElements(driver, this);
 	}
+
 	
 	protected static void clickButton(WebElement button) 
 	{

@@ -93,4 +93,10 @@ public class TestBase
 			Helper.captureScreenshot(driver, result.getName());
 		}
 	}
+	
+	
+	public void PageRefresh (WebDriver driver) 
+	{
+		driver.navigate().refresh(); 
+	}
 }
