@@ -7,8 +7,10 @@
         <methods>
           <include name="startDriver"/>
           <include name="stopDriver"/>
+          <include name="ExistedEmailRegistrationTest"/>
           <include name="screenshotOnFailure"/>
-          <include name="EmptyPhoneRegistrationTest"/>
+          <include name="InvalidLNameRegistrationTest"/>
+          <include name="InvaldEmailRegistrationTest"/>
           <include name="InvalidFNameRegistrationTest"/>
         </methods>
       </class> <!-- tests.TestRegistration -->

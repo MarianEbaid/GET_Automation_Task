@@ -43,7 +43,6 @@ public class TestRegistration extends TestBase
 		registerObject.userRegistration("", "Sultan","test@hotmail.com", "01225369841", "selenium-automation","april");
 		
 		Assert.assertTrue(registerObject.fnReqMessage.getText().contains(ReqMessage));
-		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));
 	}
 	
 	// Registration with invalid user first name field (begins with small letter)
@@ -56,6 +55,7 @@ public class TestRegistration extends TestBase
 		registerObject = new RegistrationPage(driver); 
 		registerObject.userRegistration("marian", "Sultan","test@hotmail.com", "01225369841", "selenium-automation","april");
 		
+		registerObject.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
 		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));
 	}
 	
@@ -70,7 +70,6 @@ public class TestRegistration extends TestBase
 		registerObject.userRegistration("Marian", "", "test@hotmail.com", "01225369841", "selenium-automation","april");
 
 		Assert.assertTrue(registerObject.lnReqMessage.getText().contains(ReqMessage));
-		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));
 	}
 	
 	// Registration with invalid user last name field (begins with small letter)
@@ -83,12 +82,13 @@ public class TestRegistration extends TestBase
 		registerObject = new RegistrationPage(driver); 
 		registerObject.userRegistration("Marian", "sultan", "test@hotmail.com", "01225369841", "selenium-automation","april");
 		
+		registerObject.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
 		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));
 	}
 	
 
 	// Registration without providing user email field
-	@Test(priority=7,alwaysRun=true)
+	@Test(priority=6,alwaysRun=true)
 	public void EmptyEmailRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -98,11 +98,10 @@ public class TestRegistration extends TestBase
 		registerObject.userRegistration("Marian", "Sultan", "", "01225369841", "selenium-automation","april");
 			
 		Assert.assertTrue(registerObject.emailReqMessage.getText().contains(ReqMessage));
-		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));
 	}
 		
 	// Registration with email id which already have account
-	@Test(priority=8,alwaysRun=true)
+	@Test(priority=7,alwaysRun=true)
 	public void ExistedEmailRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -110,12 +109,13 @@ public class TestRegistration extends TestBase
 		PageRefresh (driver);
 		registerObject = new RegistrationPage(driver); 
 		registerObject.userRegistration("Marian", "Sultan", "test@hotmail.com", "01225369841", "selenium-automation","april");
-					
+		
+		registerObject.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));			
 		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));	
 	}		
 
 	// Registration with invalid user email field (doesn't contain @symbol)
-	@Test(priority=9,alwaysRun=true)
+	@Test(priority=8,alwaysRun=true)
 	public void InvalidEmailRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -126,13 +126,12 @@ public class TestRegistration extends TestBase
 		
 		String expectedErrorMsg = "Please enter a valid email address!";
 		Assert.assertTrue(registerObject.emailInvalidMessage.getText().contains(expectedErrorMsg));
-		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));	
 		
 	}
 
 		
 	// Registration with invalid user email field (doesn't contain dot)
-	@Test(priority=10,alwaysRun=true)
+	@Test(priority=9,alwaysRun=true)
 	public void InvaldEmailRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -144,6 +143,8 @@ public class TestRegistration extends TestBase
 		
 		String expectedErrorMsg = "Please enter a valid email address!";
 		Assert.assertTrue(registerObject.emailInvalidMessage.getText().contains(expectedErrorMsg));
+		
+		registerObject.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
 		Assert.assertFalse(registerObject.successMessage.getText().contains(successMsg));	
 		
 	}
