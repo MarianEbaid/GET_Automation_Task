@@ -7,8 +7,8 @@
         <methods>
           <include name="startDriver"/>
           <include name="stopDriver"/>
-          <include name="ValidRegistrationTest"/>
           <include name="screenshotOnFailure"/>
+          <include name="EmptyFNameRegistrationTest"/>
         </methods>
       </class> <!-- tests.TestRegistration -->
     </classes>

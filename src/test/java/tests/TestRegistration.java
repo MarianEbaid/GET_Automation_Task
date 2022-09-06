@@ -3,6 +3,8 @@ package tests;
 
 
 import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 
@@ -24,33 +26,26 @@ public class TestRegistration extends TestBase
 		//homeObject.openRegistrationPage();
 		registerObject = new RegistrationPage(driver); 
 		registerObject.userRegistration("Marian", "Sultan","test@hotmail.com", "01225369841", "selenium-automation","april");
-	
-		System.out.println(registerObject.successMessage.getText());		
+		
+		registerObject.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Thank you for registering for our event."));
 	}
 	
-	/*
-	@Test(priority=2,dependsOnMethods= {"ValidRegistrationTest"})
-	public void RegisteredUserCanLogin() 
-	{
-		registerObject.userLogin("test@hotmail.com", "Password");
-		Assert.assertTrue(registerObject.WelcomeMessage.getText().contains("Welcome Back"));
-	}*/
-	/*
+	
 	// Registration without providing user first name field
-	@Test(priority=3,alwaysRun=true)
+	@Test(priority=2,alwaysRun=true)
 	public void EmptyFNameRegistrationTest() 
 	{
-		homeObject = new HomePage(driver); 
-		homeObject.openRegistrationPage();
+		//homeObject = new HomePage(driver); 
+		//homeObject.openRegistrationPage();
+		driver.navigate().refresh(); 
 		registerObject = new RegistrationPage(driver); 
-		registerObject.userRegistration("", "Sultan", "01225369841", "test@hotmail.com", "Password", "customers");
+		registerObject.userRegistration("", "Sultan","test@hotmail.com", "01225369841", "selenium-automation","april");
 		
-		String expectedURL = "https://phptravels.net/signup";
-		String actualURL = driver.getCurrentUrl();
-		Assert.assertEquals(actualURL, expectedURL);
+		Assert.assertTrue(registerObject.fnReqMessage.getText().contains("This is a required field."));
+		Assert.assertFalse(registerObject.successMessage.getText().contains("Thank you for registering for our event."));
 	}
-	
+	/*
 	// Registration with invalid user first name field (begins with small letter)
 	@Test(priority=4,alwaysRun=true)
 	public void InvalidFNameRegistrationTest() 

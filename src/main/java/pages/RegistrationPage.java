@@ -19,7 +19,6 @@ public class RegistrationPage extends PageBase
 		jse = (JavascriptExecutor) driver; 
 		action = new Actions(driver); 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(3500));	
-		//waitDriver(driver);
 	}
 	
 	
@@ -49,19 +48,9 @@ public class RegistrationPage extends PageBase
 	
 	@FindBy(className  = "nf-response-msg")
 	public WebElement successMessage ; 
-	/*
-	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)                            
-			.withTimeout(Duration.ofSeconds(3500))          
-			.pollingEvery(Duration.ofSeconds(3500))          
-			;    
-
-			 WebElement successMessagee = wait.until(new Function<WebDriver, WebElement>() {       
-			public WebElement apply(WebDriver driver) { 
-			return driver.findElement(By.className("nf-response-msg"));     
-			 }  
-			});  
-*/
 	
+	@FindBy(id  = "nf-error-17")
+	public WebElement fnReqMessage ; 
 	
 	public void userRegistration(String firstName, String lastName, String email, String phone, String course, String month)
 	
@@ -83,22 +72,7 @@ public class RegistrationPage extends PageBase
 		//clickButton(referralRdoBtn);
 
 		clickButton(registerBtn);
-		
-		//action.pause(Duration.ofSeconds(3500));	
-		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));
-		
-		
-		
-		System.out.println(successMessage.getText());
 	}
-	/*
-	public void userLogin (String email , String password) 
-	{
-		setTextElementText(emailTxtBox, email);
-		setTextElementText(passwordTxtBox, password);
-		clickButton(loginBtn);
-	}
-	*/
+	
 	
 }
