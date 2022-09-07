@@ -16,30 +16,21 @@ public class HomePage extends PageBase
 	}
 	
 	
-	@FindBy( css  ="button#ACCOUNT.btn.btn-primary.dropdown-toggle.waves-effect" )
-	WebElement AccountBtn; 
+	@FindBy( linkText  ="Course Registration" )
+	WebElement CourseRegistrationBtn; 
 	
-	@FindBy(linkText="Customer Login")
-	WebElement CustomerLogin; 
-	
-	@FindBy(linkText="Customer Signup")
-	WebElement CustomerSignup; 
-	
-	
+	@FindBy(linkText ="Registration Form")
+	WebElement RegistrationForm; 
+		
 	
 	public void openRegistrationPage() 
 	{
-		//clickButton(AccountBtn);
-		action.moveToElement(AccountBtn).click().build().perform();
-		clickButton(CustomerSignup);
+		clickButton(CourseRegistrationBtn);
+		clickButton(RegistrationForm);
+		//action.moveToElement(CourseRegistrationBtn).click().build().perform();
+		//action.moveToElement(RegistrationForm).click().build().perform();
 	}
 	
-	public void openLoginPage() 
-	{
-		//clickButton(AccountBtn);
-		action.moveToElement(AccountBtn).click().build().perform();
-		clickButton(CustomerLogin);
-	}
 	
 	
 

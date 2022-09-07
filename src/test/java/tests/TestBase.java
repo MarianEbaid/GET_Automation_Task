@@ -74,6 +74,8 @@ public class TestBase
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(350));
 		driver.navigate().to("https://codenboxautomationlab.com/registration-form/");
+				//"https://codenboxautomationlab.com/course-registration/");
+				
 	} 
 
 	@AfterSuite

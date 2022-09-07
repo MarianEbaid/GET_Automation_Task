@@ -16,7 +16,8 @@ public class RegistrationPage extends PageBase
 		super(driver);
 		jse = (JavascriptExecutor) driver; 
 		action = new Actions(driver); 
-		wait = new WebDriverWait(driver, Duration.ofSeconds(3500));	
+
+		wait = new WebDriverWait(driver, Duration.ofSeconds(3500));
 	}
 	
 	
@@ -69,10 +70,10 @@ public class RegistrationPage extends PageBase
 	public void userRegistration(String firstName, String lastName, String email, String phone, String course, String month)
 	
 	{
-		fnTxtBox.clear();
-		lnTxtBox.clear();
-		emailTxtBox.clear();
-		phoneTxtBox.clear();
+		clearText(fnTxtBox); 
+		clearText(lnTxtBox);
+		clearText(emailTxtBox);
+		clearText(phoneTxtBox);
 		
 		setTextElementText(fnTxtBox, firstName);
 		setTextElementText(lnTxtBox, lastName);
@@ -92,13 +93,14 @@ public class RegistrationPage extends PageBase
 		
 	}
 	
-public void userRegistrationWithoutRdo(String firstName, String lastName, String email, String phone, String course, String month)
+	public void userRegistrationWithoutRdo(String firstName, String lastName, String email, String phone, String course, String month)
 	
 	{
-		fnTxtBox.clear();
-		lnTxtBox.clear();
-		emailTxtBox.clear();
-		phoneTxtBox.clear();
+	
+		clearText(fnTxtBox); 
+		clearText(lnTxtBox);
+		clearText(emailTxtBox);
+		clearText(phoneTxtBox);
 		
 		setTextElementText(fnTxtBox, firstName);
 		setTextElementText(lnTxtBox, lastName);

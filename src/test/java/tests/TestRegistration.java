@@ -1,20 +1,16 @@
 package tests;
 
-
-
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pages.HomePage;
-import pages.LoginPage;
 import pages.RegistrationPage;
 
 public class TestRegistration extends TestBase
 {
 	HomePage homeObject ; 
 	RegistrationPage registerObject ; 
-	LoginPage loginObject ; 
 	
 	String successMsg = "Thank you for registering for our event.";
 	String ReqMessage = "This is a required field.";

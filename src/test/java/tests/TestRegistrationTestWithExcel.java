@@ -12,14 +12,12 @@ import org.testng.annotations.Test;
 import data.ExcelReaderInv;
 import data.ExcelReader;
 import pages.HomePage;
-import pages.LoginPage;
 import pages.RegistrationPage;
 
 public class TestRegistrationTestWithExcel extends TestBase
 {
 	HomePage homeObject ; 
 	RegistrationPage registerObject ; 
-	LoginPage loginObject ; 
 	String ReqMessage = "This is a required field.";
 	String successMsg = "Thank you for registering for our event.";
 

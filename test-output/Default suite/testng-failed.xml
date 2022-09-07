@@ -8,8 +8,7 @@
           <include name="startDriver"/>
           <include name="stopDriver"/>
           <include name="screenshotOnFailure"/>
-          <include name="InvalidEmailRegistrationTest3"/>
-          <include name="InvalidEmailRegistrationTest4"/>
+          <include name="InvalidEmailRegistrationTest2"/>
         </methods>
       </class> <!-- tests.TestRegistration -->
     </classes>
