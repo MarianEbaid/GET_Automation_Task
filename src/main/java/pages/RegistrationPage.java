@@ -62,6 +62,10 @@ public class RegistrationPage extends PageBase
 	@FindBy(id  = "nf-error-23")
 	public WebElement knwAbtInvalidMessage ; 
 	
+	@FindBy(id  = "nf-form-errors-3")
+	public WebElement ReqErrorMessage ; 
+	
+	
 	public void userRegistration(String firstName, String lastName, String email, String phone, String course, String month)
 	
 	{

@@ -5,11 +5,11 @@
     <classes>
       <class name="tests.TestRegistration">
         <methods>
-          <include name="InvalidEmailRegistrationTest"/>
           <include name="startDriver"/>
           <include name="stopDriver"/>
-          <include name="InvalidEmailRegistrationTest5"/>
           <include name="screenshotOnFailure"/>
+          <include name="InvalidEmailRegistrationTest3"/>
+          <include name="InvalidEmailRegistrationTest4"/>
         </methods>
       </class> <!-- tests.TestRegistration -->
     </classes>

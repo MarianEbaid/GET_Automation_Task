@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="21" passed="16" failed="2" skipped="0">
+<testng-results ignored="2" total="21" passed="17" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-07T20:45:44 EET" name="Default suite" finished-at="2022-09-07T20:47:18 EET" duration-ms="93915">
+  <suite started-at="2022-09-07T22:16:03 EET" name="Default suite" finished-at="2022-09-07T22:17:42 EET" duration-ms="99026">
     <groups>
     </groups>
-    <test started-at="2022-09-07T20:45:44 EET" name="Default test" finished-at="2022-09-07T20:47:18 EET" duration-ms="93915">
+    <test started-at="2022-09-07T22:16:03 EET" name="Default test" finished-at="2022-09-07T22:17:42 EET" duration-ms="99026">
       <class name="tests.TestRegistration">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:35 EET" name="startDriver" finished-at="2022-09-07T20:45:44 EET" duration-ms="8808" status="PASS">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:15:54 EET" name="startDriver" finished-at="2022-09-07T22:16:03 EET" duration-ms="9008" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="ValidRegistrationTest()[pri:1, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:44 EET" name="ValidRegistrationTest" finished-at="2022-09-07T20:45:51 EET" duration-ms="7607" status="PASS">
+        <test-method signature="ValidRegistrationTest()[pri:1, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:03 EET" name="ValidRegistrationTest" finished-at="2022-09-07T22:16:11 EET" duration-ms="8322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:51 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:45:51 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:11 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:11 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,308 +33,217 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="EmptyFNameRegistrationTest()[pri:2, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:51 EET" name="EmptyFNameRegistrationTest" finished-at="2022-09-07T20:45:54 EET" duration-ms="2681" status="PASS">
+        <test-method signature="InValidRegistrationTest()[pri:2, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:11 EET" name="InValidRegistrationTest" finished-at="2022-09-07T22:16:14 EET" duration-ms="2472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidRegistrationTest -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:14 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:14 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InValidRegistrationTest status=SUCCESS method=TestRegistration.InValidRegistrationTest()[pri:2, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="EmptyFNameRegistrationTest()[pri:3, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:14 EET" name="EmptyFNameRegistrationTest" finished-at="2022-09-07T22:16:16 EET" duration-ms="2364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmptyFNameRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:54 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:45:54 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:16 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:16 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EmptyFNameRegistrationTest status=SUCCESS method=TestRegistration.EmptyFNameRegistrationTest()[pri:2, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=EmptyFNameRegistrationTest status=SUCCESS method=TestRegistration.EmptyFNameRegistrationTest()[pri:3, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="EmptyLNameRegistrationTest()[pri:3, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:54 EET" name="EmptyLNameRegistrationTest" finished-at="2022-09-07T20:45:57 EET" duration-ms="2507" status="PASS">
+        <test-method signature="EmptyLNameRegistrationTest()[pri:4, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:16 EET" name="EmptyLNameRegistrationTest" finished-at="2022-09-07T22:16:18 EET" duration-ms="2042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmptyLNameRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:57 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:45:57 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:18 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:18 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EmptyLNameRegistrationTest status=SUCCESS method=TestRegistration.EmptyLNameRegistrationTest()[pri:3, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=EmptyLNameRegistrationTest status=SUCCESS method=TestRegistration.EmptyLNameRegistrationTest()[pri:4, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest()[pri:4, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:45:57 EET" name="ValidEmailRegistrationTest" finished-at="2022-09-07T20:46:05 EET" duration-ms="8741" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest()[pri:5, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:18 EET" name="ValidEmailRegistrationTest" finished-at="2022-09-07T22:16:26 EET" duration-ms="8197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:05 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:46:05 EET" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:26 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:26 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest()[pri:4, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest()[pri:5, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest2()[pri:5, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:05 EET" name="ValidEmailRegistrationTest2" finished-at="2022-09-07T20:46:16 EET" duration-ms="10574" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest2()[pri:6, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:26 EET" name="ValidEmailRegistrationTest2" finished-at="2022-09-07T22:16:37 EET" duration-ms="10662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest2 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:16 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:46:16 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:37 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:37 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest2 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest2()[pri:5, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest2 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest2()[pri:6, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest3()[pri:6, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:16 EET" name="ValidEmailRegistrationTest3" finished-at="2022-09-07T20:46:25 EET" duration-ms="9055" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest3()[pri:7, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:37 EET" name="ValidEmailRegistrationTest3" finished-at="2022-09-07T22:16:48 EET" duration-ms="10882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest3 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:25 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:46:25 EET" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:48 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:48 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest3 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest3()[pri:6, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest3 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest3()[pri:7, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest4()[pri:7, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:25 EET" name="ValidEmailRegistrationTest4" finished-at="2022-09-07T20:46:31 EET" duration-ms="6240" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest4()[pri:8, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:48 EET" name="ValidEmailRegistrationTest4" finished-at="2022-09-07T22:16:54 EET" duration-ms="6192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest4 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:31 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:46:31 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:54 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:16:54 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest4 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest4()[pri:7, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest4 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest4()[pri:8, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest5()[pri:8, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:31 EET" name="ValidEmailRegistrationTest5" finished-at="2022-09-07T20:46:40 EET" duration-ms="8828" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest5()[pri:9, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:16:54 EET" name="ValidEmailRegistrationTest5" finished-at="2022-09-07T22:17:02 EET" duration-ms="8254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest5 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:40 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:46:40 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:02 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:02 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest5 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest5()[pri:8, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest5 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest5()[pri:9, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest6()[pri:9, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:40 EET" name="ValidEmailRegistrationTest6" finished-at="2022-09-07T20:46:48 EET" duration-ms="7767" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest6()[pri:10, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:02 EET" name="ValidEmailRegistrationTest6" finished-at="2022-09-07T22:17:11 EET" duration-ms="8950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest6 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:48 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:46:48 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:11 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:11 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest6 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest6()[pri:9, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest6 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest6()[pri:10, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest7()[pri:10, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:48 EET" name="ValidEmailRegistrationTest7" finished-at="2022-09-07T20:46:56 EET" duration-ms="8465" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest7()[pri:11, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:11 EET" name="ValidEmailRegistrationTest7" finished-at="2022-09-07T22:17:20 EET" duration-ms="8885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest7 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:56 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:46:56 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:20 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:20 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest7 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest7()[pri:10, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest7 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest7()[pri:11, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="ValidEmailRegistrationTest8()[pri:11, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:46:56 EET" name="ValidEmailRegistrationTest8" finished-at="2022-09-07T20:47:05 EET" duration-ms="8798" status="PASS">
+        <test-method signature="ValidEmailRegistrationTest8()[pri:12, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:20 EET" name="ValidEmailRegistrationTest8" finished-at="2022-09-07T22:17:28 EET" duration-ms="7884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidEmailRegistrationTest8 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:05 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:05 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:28 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:28 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidEmailRegistrationTest8 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest8()[pri:11, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=ValidEmailRegistrationTest8 status=SUCCESS method=TestRegistration.ValidEmailRegistrationTest8()[pri:12, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="EmptyEmailRegistrationTest()[pri:12, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:05 EET" name="EmptyEmailRegistrationTest" finished-at="2022-09-07T20:47:07 EET" duration-ms="2086" status="PASS">
+        <test-method signature="EmptyEmailRegistrationTest()[pri:13, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:28 EET" name="EmptyEmailRegistrationTest" finished-at="2022-09-07T22:17:30 EET" duration-ms="1894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmptyEmailRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:07 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:07 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:30 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:30 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EmptyEmailRegistrationTest status=SUCCESS method=TestRegistration.EmptyEmailRegistrationTest()[pri:12, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=EmptyEmailRegistrationTest status=SUCCESS method=TestRegistration.EmptyEmailRegistrationTest()[pri:13, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="InvalidEmailRegistrationTest()[pri:14, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:07 EET" name="InvalidEmailRegistrationTest" finished-at="2022-09-07T20:47:09 EET" duration-ms="1343" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-P7GPACC', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [def39cecaab1196aba92ccd042526d03, clearElement {id=d0f1c24e-bdc0-4d0b-bc47-eed7e2d79b3a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53438/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (def39cecaab1196aba92ccd042526d03)] -> id: nf-field-18]
-Session ID: def39cecaab1196aba92ccd042526d03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=104.0.5112.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-P7GPACC', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [def39cecaab1196aba92ccd042526d03, clearElement {id=d0f1c24e-bdc0-4d0b-bc47-eed7e2d79b3a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53438/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (def39cecaab1196aba92ccd042526d03)] -> id: nf-field-18]
-Session ID: def39cecaab1196aba92ccd042526d03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.clear(Unknown Source)
-at pages.RegistrationPage.userRegistration(RegistrationPage.java:69)
-at tests.TestRegistration.InvalidEmailRegistrationTest(TestRegistration.java:210)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="InvalidEmailRegistrationTest()[pri:14, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:30 EET" name="InvalidEmailRegistrationTest" finished-at="2022-09-07T22:17:32 EET" duration-ms="2194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidEmailRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:09 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:09 EET" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:32 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:32 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidEmailRegistrationTest status=FAILURE method=TestRegistration.InvalidEmailRegistrationTest()[pri:14, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidEmailRegistrationTest status=SUCCESS method=TestRegistration.InvalidEmailRegistrationTest()[pri:14, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="InvalidEmailRegistrationTest2()[pri:14, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:09 EET" name="InvalidEmailRegistrationTest2" finished-at="2022-09-07T20:47:11 EET" duration-ms="1900" status="PASS">
+        <test-method signature="InvalidEmailRegistrationTest2()[pri:15, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:32 EET" name="InvalidEmailRegistrationTest2" finished-at="2022-09-07T22:17:34 EET" duration-ms="2165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidEmailRegistrationTest2 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:11 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:11 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:34 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:34 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidEmailRegistrationTest2 status=SUCCESS method=TestRegistration.InvalidEmailRegistrationTest2()[pri:14, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidEmailRegistrationTest2 status=SUCCESS method=TestRegistration.InvalidEmailRegistrationTest2()[pri:15, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="InvalidEmailRegistrationTest3()[pri:14, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:11 EET" name="InvalidEmailRegistrationTest3" finished-at="2022-09-07T20:47:13 EET" duration-ms="2008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidEmailRegistrationTest3 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:13 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:13 EET" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=InvalidEmailRegistrationTest3 status=SUCCESS method=TestRegistration.InvalidEmailRegistrationTest3()[pri:14, instance:tests.TestRegistration@563f38c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="InvalidEmailRegistrationTest4()[pri:14, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:13 EET" name="InvalidEmailRegistrationTest4" finished-at="2022-09-07T20:47:15 EET" duration-ms="1905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidEmailRegistrationTest4 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:15 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:15 EET" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=InvalidEmailRegistrationTest4 status=SUCCESS method=TestRegistration.InvalidEmailRegistrationTest4()[pri:14, instance:tests.TestRegistration@563f38c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="InvalidEmailRegistrationTest5()[pri:15, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:15 EET" name="InvalidEmailRegistrationTest5" finished-at="2022-09-07T20:47:16 EET" duration-ms="1004" status="FAIL">
+        <test-method signature="InvalidEmailRegistrationTest3()[pri:16, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:34 EET" name="InvalidEmailRegistrationTest3" finished-at="2022-09-07T22:17:35 EET" duration-ms="1038" status="FAIL">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: element is not attached to the page document
@@ -343,10 +252,10 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-P7GPACC', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [def39cecaab1196aba92ccd042526d03, clearElement {id=3127446a-594e-484e-b55c-4492226c42fb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53438/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (def39cecaab1196aba92ccd042526d03)] -> id: nf-field-17]
-Session ID: def39cecaab1196aba92ccd042526d03]]>
+Command: [038fe71990490bd7a624cc2379a69f69, clearElement {id=e90da69f-dcf7-46e0-a698-9092086b3777}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56695/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (038fe71990490bd7a624cc2379a69f69)] -> id: nf-field-18]
+Session ID: 038fe71990490bd7a624cc2379a69f69]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
@@ -355,10 +264,10 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-P7GPACC', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [def39cecaab1196aba92ccd042526d03, clearElement {id=3127446a-594e-484e-b55c-4492226c42fb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53438/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (def39cecaab1196aba92ccd042526d03)] -> id: nf-field-17]
-Session ID: def39cecaab1196aba92ccd042526d03
+Command: [038fe71990490bd7a624cc2379a69f69, clearElement {id=e90da69f-dcf7-46e0-a698-9092086b3777}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56695/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (038fe71990490bd7a624cc2379a69f69)] -> id: nf-field-18]
+Session ID: 038fe71990490bd7a624cc2379a69f69
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -378,8 +287,8 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at jdk.proxy2/jdk.proxy2.$Proxy19.clear(Unknown Source)
-at pages.RegistrationPage.userRegistration(RegistrationPage.java:68)
-at tests.TestRegistration.InvalidEmailRegistrationTest5(TestRegistration.java:263)
+at pages.RegistrationPage.userRegistration(RegistrationPage.java:73)
+at tests.TestRegistration.InvalidEmailRegistrationTest3(TestRegistration.java:241)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -413,34 +322,140 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidEmailRegistrationTest5 -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:16 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:16 EET" duration-ms="212" status="PASS">
+        </test-method> <!-- InvalidEmailRegistrationTest3 -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:35 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:36 EET" duration-ms="341" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidEmailRegistrationTest5 status=FAILURE method=TestRegistration.InvalidEmailRegistrationTest5()[pri:15, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidEmailRegistrationTest3 status=FAILURE method=TestRegistration.InvalidEmailRegistrationTest3()[pri:16, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="EmptyKnowAboutRegistrationTest()[pri:16, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:16 EET" name="EmptyKnowAboutRegistrationTest" finished-at="2022-09-07T20:47:18 EET" duration-ms="1866" status="PASS">
+        <test-method signature="InvalidEmailRegistrationTest4()[pri:17, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:36 EET" name="InvalidEmailRegistrationTest4" finished-at="2022-09-07T22:17:37 EET" duration-ms="1093" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-P7GPACC', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [038fe71990490bd7a624cc2379a69f69, clearElement {id=b428c1d4-f989-4ed5-8841-69e42d1a5b50}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56695/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (038fe71990490bd7a624cc2379a69f69)] -> id: nf-field-17]
+Session ID: 038fe71990490bd7a624cc2379a69f69]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-P7GPACC', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [038fe71990490bd7a624cc2379a69f69, clearElement {id=b428c1d4-f989-4ed5-8841-69e42d1a5b50}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Maro\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56695/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (038fe71990490bd7a624cc2379a69f69)] -> id: nf-field-17]
+Session ID: 038fe71990490bd7a624cc2379a69f69
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy19.clear(Unknown Source)
+at pages.RegistrationPage.userRegistration(RegistrationPage.java:72)
+at tests.TestRegistration.InvalidEmailRegistrationTest4(TestRegistration.java:254)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidEmailRegistrationTest4 -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:37 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:37 EET" duration-ms="151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidEmailRegistrationTest4 status=FAILURE method=TestRegistration.InvalidEmailRegistrationTest4()[pri:17, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="InvalidEmailRegistrationTest5()[pri:18, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:37 EET" name="InvalidEmailRegistrationTest5" finished-at="2022-09-07T22:17:39 EET" duration-ms="1972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidEmailRegistrationTest5 -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:39 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:39 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidEmailRegistrationTest5 status=SUCCESS method=TestRegistration.InvalidEmailRegistrationTest5()[pri:18, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="EmptyKnowAboutRegistrationTest()[pri:19, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:39 EET" name="EmptyKnowAboutRegistrationTest" finished-at="2022-09-07T22:17:42 EET" duration-ms="2950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmptyKnowAboutRegistrationTest -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:18 EET" name="screenshotOnFailure" finished-at="2022-09-07T20:47:18 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:42 EET" name="screenshotOnFailure" finished-at="2022-09-07T22:17:42 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EmptyKnowAboutRegistrationTest status=SUCCESS method=TestRegistration.EmptyKnowAboutRegistrationTest()[pri:16, instance:tests.TestRegistration@563f38c4] output={null}]]]>
+                <![CDATA[[TestResult name=EmptyKnowAboutRegistrationTest status=SUCCESS method=TestRegistration.EmptyKnowAboutRegistrationTest()[pri:19, instance:tests.TestRegistration@563f38c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T20:47:18 EET" name="stopDriver" finished-at="2022-09-07T20:47:18 EET" duration-ms="431" status="PASS">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.TestRegistration@563f38c4]" started-at="2022-09-07T22:17:42 EET" name="stopDriver" finished-at="2022-09-07T22:17:42 EET" duration-ms="383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->

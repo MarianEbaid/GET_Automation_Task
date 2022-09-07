@@ -15,8 +15,9 @@ public class TestRegistration extends TestBase
 	HomePage homeObject ; 
 	RegistrationPage registerObject ; 
 	LoginPage loginObject ; 
-	String ReqMessage = "This is a required field.";
+	
 	String successMsg = "Thank you for registering for our event.";
+	String ReqMessage = "This is a required field.";
 	String invalidEmailErrorMsg = "Please enter a valid email address!";
 
 	// Registration with all valid data
@@ -32,9 +33,26 @@ public class TestRegistration extends TestBase
 		Assert.assertTrue(registerObject.successMessage.getText().contains(successMsg));
 	}
 	
+	// Registration with all valid data
+	@Test(priority=2,alwaysRun=true)
+	public void InValidRegistrationTest() 
+	{
+		//homeObject = new HomePage(driver); 
+		//homeObject.openRegistrationPage();
+		PageRefresh (driver);
+		registerObject = new RegistrationPage(driver); 
+		registerObject.userRegistrationWithoutRdo("", "","", "01225369841", "selenium-automation","april");
+		
+		String ExcpectedReqMsg = "Please correct errors before submitting this form.";
+		Assert.assertTrue(registerObject.ReqErrorMessage.getText().contains(ExcpectedReqMsg));
+		
+		Assert.assertTrue(registerObject.fnReqMessage.getText().contains(ReqMessage));
+		Assert.assertTrue(registerObject.lnReqMessage.getText().contains(ReqMessage));
+		Assert.assertTrue(registerObject.emailReqMessage.getText().contains(ReqMessage));
+	}
 	
 	// Registration without providing user first name field
-	@Test(priority=2,alwaysRun=true)
+	@Test(priority=3,alwaysRun=true)
 	public void EmptyFNameRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -47,7 +65,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration without providing user last name field
-	@Test(priority=3,alwaysRun=true)
+	@Test(priority=4,alwaysRun=true)
 	public void EmptyLNameRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -61,7 +79,7 @@ public class TestRegistration extends TestBase
 	
 //////////////////////////////////////////////////Email Validation - Positive Scenarios//////////////////////////////////
 	// Registration with valid email field (contains a dot in the address field)
-	@Test(priority=4,alwaysRun=true)
+	@Test(priority=5,alwaysRun=true)
 	public void ValidEmailRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -75,7 +93,7 @@ public class TestRegistration extends TestBase
 	}	
 	
 	// Registration with valid email field (contains dot with subdomain)
-	@Test(priority=5,alwaysRun=true)
+	@Test(priority=6,alwaysRun=true)
 	public void ValidEmailRegistrationTest2() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -89,7 +107,7 @@ public class TestRegistration extends TestBase
 	}	
 	
 	// Registration with valid email field (With the Plus sign is considered a valid character)
-	@Test(priority=6,alwaysRun=true)
+	@Test(priority=7,alwaysRun=true)
 	public void ValidEmailRegistrationTest3() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -103,7 +121,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with valid email field (With Quotes around the email is considered valid)
-	@Test(priority=7,alwaysRun=true)
+	@Test(priority=8,alwaysRun=true)
 	public void ValidEmailRegistrationTest4() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -117,7 +135,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with valid email field (With Digits in the address are valid)
-	@Test(priority=8,alwaysRun=true)
+	@Test(priority=9,alwaysRun=true)
 	public void ValidEmailRegistrationTest5() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -131,7 +149,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with valid email field (With Underscore in the address field is valid)
-	@Test(priority=9,alwaysRun=true)
+	@Test(priority=10,alwaysRun=true)
 	public void ValidEmailRegistrationTest6() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -145,7 +163,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with valid email field (With Dot in Top Level Domain name is valid)
-	@Test(priority=10,alwaysRun=true)
+	@Test(priority=11,alwaysRun=true)
 	public void ValidEmailRegistrationTest7() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -159,7 +177,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with valid email field (With Dash in the address field is valid)
-	@Test(priority=11,alwaysRun=true)
+	@Test(priority=12,alwaysRun=true)
 	public void ValidEmailRegistrationTest8() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -173,7 +191,7 @@ public class TestRegistration extends TestBase
 	}
 //////////////////////////////////////////////////Email Validation - Negative Scenarios//////////////////////////////////	
 	// Registration without providing user email field
-	@Test(priority=12,alwaysRun=true)
+	@Test(priority=13,alwaysRun=true)
 	public void EmptyEmailRegistrationTest() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -184,20 +202,7 @@ public class TestRegistration extends TestBase
 			
 		Assert.assertTrue(registerObject.emailReqMessage.getText().contains(ReqMessage));
 	}
-		
-	// Registration with email id which already have account
-	@Test(priority=13,enabled = false)
-	public void ExistedEmailRegistrationTest() 
-	{
-		//homeObject = new HomePage(driver); 
-		//homeObject.openRegistrationPage();
-		PageRefresh (driver);
-		registerObject = new RegistrationPage(driver); 
-		registerObject.userRegistration("Marian", "Sultan", "test@example.com", "01225369841", "selenium-automation","april");
-		
-		registerObject.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));			
-		Assert.assertTrue(registerObject.successMessage.getText().contains(successMsg));	
-	}		
+			
 
 	// Registration with invalid user email field (doesn't contain @symbol)
 	@Test(priority=14,alwaysRun=true)
@@ -213,7 +218,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with invalid user email field (With Two @ symbol)
-	@Test(priority=14,alwaysRun=true)
+	@Test(priority=15,alwaysRun=true)
 	public void InvalidEmailRegistrationTest2() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -226,7 +231,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with invalid user email field (With space  in the address field)
-	@Test(priority=14,alwaysRun=true)
+	@Test(priority=16,alwaysRun=true)
 	public void InvalidEmailRegistrationTest3() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -239,7 +244,7 @@ public class TestRegistration extends TestBase
 	}
 	
 	// Registration with invalid user email field (With the Missing top-level domain (.com/.net/.org/etc))
-	@Test(priority=14,alwaysRun=true)
+	@Test(priority=17,alwaysRun=true)
 	public void InvalidEmailRegistrationTest4() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -252,7 +257,7 @@ public class TestRegistration extends TestBase
 	}
 		
 	// Registration with invalid user email field (With the Leading dot in the address)
-	@Test(priority=15,alwaysRun=true)
+	@Test(priority=18,alwaysRun=true)
 	public void InvalidEmailRegistrationTest5() 
 	{
 		//homeObject = new HomePage(driver); 
@@ -266,7 +271,7 @@ public class TestRegistration extends TestBase
 	}
 /////////////////////////////////////////Know About Us Validation//////////////////////////////	
 	// Registration without selecting know about us field (doesn't contain dot)
-		@Test(priority=16,alwaysRun=true)
+		@Test(priority=19,alwaysRun=true)
 		public void EmptyKnowAboutRegistrationTest() 
 		{
 			//homeObject = new HomePage(driver); 

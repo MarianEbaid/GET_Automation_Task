@@ -20,7 +20,7 @@ URL : https://codenboxautomationlab.com/registration-form/
 * download from github (MarianEbaid)
 
 ### Executing program
-
+* open file: GET_ME_Task\test-output\emailable-report.html : to display test output report
 * run it using eclipse IDE
 
 ## Help
