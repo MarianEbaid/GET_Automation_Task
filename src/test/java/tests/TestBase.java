@@ -91,6 +91,7 @@ public class TestBase
 			System.out.println("Failed!");
 			System.out.println("Taking Screenshot....");
 			Helper.captureScreenshot(driver, result.getName());
+			//driver.quit();
 		}
 	}
 	

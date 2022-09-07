@@ -39,7 +39,7 @@ public class RegistrationPage extends PageBase
 	WebElement monthMenu ;
 	
 	@FindBy(id = "nf-field-23-1")
-	WebElement referralRdoBtn ; 
+	WebElement knowAboutRdoBtn ; 
 	
 	@FindBy(id = "nf-field-15")
 	WebElement registerBtn ; 
@@ -58,6 +58,9 @@ public class RegistrationPage extends PageBase
 	
 	@FindBy(id  = "nf-error-19")
 	public WebElement emailInvalidMessage ; 
+	
+	@FindBy(id  = "nf-error-23")
+	public WebElement knwAbtInvalidMessage ; 
 	
 	public void userRegistration(String firstName, String lastName, String email, String phone, String course, String month)
 	
@@ -78,7 +81,33 @@ public class RegistrationPage extends PageBase
 		Select monthName = new Select(monthMenu);
 		monthName.selectByValue(month);
 		
-		jse.executeScript("arguments[0].click();", referralRdoBtn);
+		jse.executeScript("arguments[0].click();", knowAboutRdoBtn);
+		//clickButton(referralRdoBtn);
+
+		clickButton(registerBtn);
+		
+	}
+	
+public void userRegistrationWithoutRdo(String firstName, String lastName, String email, String phone, String course, String month)
+	
+	{
+		fnTxtBox.clear();
+		lnTxtBox.clear();
+		emailTxtBox.clear();
+		phoneTxtBox.clear();
+		
+		setTextElementText(fnTxtBox, firstName);
+		setTextElementText(lnTxtBox, lastName);
+		setTextElementText(emailTxtBox, email);
+		setTextElementText(phoneTxtBox, phone);
+		
+		Select courseName = new Select(courseMenu);
+		courseName.selectByValue(course);
+		
+		Select monthName = new Select(monthMenu);
+		monthName.selectByValue(month);
+		
+		//jse.executeScript("arguments[0].click();", knowAboutRdoBtn);
 		//clickButton(referralRdoBtn);
 
 		clickButton(registerBtn);

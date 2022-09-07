@@ -53,11 +53,6 @@ public class PageBase {
 		element.clear();
 	}
 	
-	public void waitDriver(WebDriver driver)
-	{
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(350));
-		
-	}
 	
 
 }

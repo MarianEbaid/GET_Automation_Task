@@ -4,10 +4,12 @@ package tests;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+import data.ExcelReaderInv;
 import data.ExcelReader;
 import pages.HomePage;
 import pages.LoginPage;
@@ -18,6 +20,8 @@ public class TestRegistrationTestWithExcel extends TestBase
 	HomePage homeObject ; 
 	RegistrationPage registerObject ; 
 	LoginPage loginObject ; 
+	String ReqMessage = "This is a required field.";
+	String successMsg = "Thank you for registering for our event.";
 
 	@DataProvider(name="ExcelData")
 	public Object[][] userRegisterData() throws IOException
@@ -26,35 +30,41 @@ public class TestRegistrationTestWithExcel extends TestBase
 		ExcelReader ER = new ExcelReader();
 		return ER.getExcelData();
 	}
+	
+	@DataProvider(name="ExcelDataInv")
+	public Object[][] userRegisterDataInv() throws IOException
+	{
+		// get data from Excel Reader class 
+		ExcelReaderInv ERI = new ExcelReaderInv();
+		return ERI.getExcelData();
+	}
+
 
 	@Test(priority=1,alwaysRun=true,dataProvider="ExcelData")
-	public void UserRegisterSuccessfully(String fname, String lname, String phone, String email,	String password)
-	//, String accountType) 
+	public void UserRegisterSuccessfully(String fName, String lName, String email, String phone, String course, String month)
 	{
-		homeObject = new HomePage(driver); 
-		homeObject.openRegistrationPage();
+		//homeObject = new HomePage(driver); 
+		//homeObject.openRegistrationPage();
+		PageRefresh(driver);
 		registerObject = new RegistrationPage(driver); 
-		registerObject.userRegistration(fname,lname,phone,email,password);
-		//,accountType);
+		registerObject.userRegistration(fName,lName,email,phone,course,month);
+				
+		registerObject.wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("nf-response-msg")));			
+		Assert.assertTrue(registerObject.successMessage.getText().contains(successMsg));	
+		
+	}
+	
+	@Test(priority=2,alwaysRun=true,dataProvider="ExcelData")
+	public void UserRegisterUnSuccessfully(String fName, String lName, String email, String phone, String course, String month)
+	{
+		//homeObject = new HomePage(driver); 
+		//homeObject.openRegistrationPage();
+		PageRefresh(driver);
+		registerObject = new RegistrationPage(driver); 
+		registerObject.userRegistration(fName,lName,email,phone,course,month);		
 
-		String expectedURL = "https://phptravels.net/login/signup";
-		String actualURL = driver.getCurrentUrl();
-		Assert.assertEquals(actualURL, expectedURL);
+		Assert.assertTrue(registerObject.fnReqMessage.getText().contains(ReqMessage));	
 		
-		Assert.assertTrue(registerObject.successMessage.getText().contains("Signup Successfull please login"));
-		
-		registerObject.userLogin(email, password);
-		Assert.assertTrue(registerObject.WelcomeMessage.getText().contains("Welcome Back"));
-		
-		/*
-		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
-		registerObject.userLogout();
-		homeObject.openLoginPage();
-		loginObject = new LoginPage(driver); 
-		loginObject.UserLogin(email,password);
-		Assert.assertTrue(registerObject.logoutLink.getText().contains("Log out"));
-		registerObject.userLogout();
-		*/
 	}
 
 }
