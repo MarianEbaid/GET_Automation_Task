@@ -21,6 +21,7 @@ URL : https://codenboxautomationlab.com/registration-form/
 
 ### Executing program
 
+* to view reports : open \test-output\emailable-report.html
 * run it using eclipse IDE
 
 ## Help
